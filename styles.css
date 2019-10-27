@@ -1,0 +1,90 @@
+input{
+    outline: none;
+    border: none;
+}
+button{
+    font-size: 20px;
+    color: rgb(117,117,117);
+    border-radius: 5px;
+    background-color: #fefefe;
+    border: 1px solid grey;
+    padding: 4px 8px;
+    font-family: serif;
+    margin-right: -10px;
+}
+button:first-child{
+    margin-right: 10px;
+}
+button:hover{
+    border-color: #dddddd;
+}
+a{
+    color: rgb(117,117,117);
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+.endbar{
+    display: flex;
+    justify-content: flex-end;
+}
+.inputtitle{
+    font-family: 'Libre Caslon Text', serif;
+    width: 710px;
+    margin: 10px auto;
+    font-style: bold;
+    font-size: 42px;
+    text-align: center;
+}
+.inputbox {
+    width: 680px;
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 26px;
+}
+.big-container{
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 710px;
+}
+.line-container{
+    position: relative;
+    margin-bottom: 10px;
+}
+.line-container:last-child{
+    margin-bottom: 0px;
+}
+.syllable-counter{
+    color: grey;
+    position: absolute;
+    bottom: -25px;
+    left: 690px;
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 26px;
+    text-align: left;
+}
+.rhymer{
+    color: grey;
+    position: absolute;
+    bottom: -25px;
+    left: 740px;
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 26px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css" />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
+  <script src="rita.js"></script>
+  <script src="poems.js"></script>
+  <script src="scripts.js"></script>
+</head>
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <div class="big-container" style="border: none">
+      <input placeholder="Title" class="inputtitle" id="title" autocomplete="off">
+    </div>
+    <div class="big-container" id="inputs">
+    </div>
+    <div class="big-container endbar" style="border: none">
+        <button onclick="copyAll()">Copy</button>
+        <button onclick="clearAll()">Reset</button>
+    </div>
+    <a href="about.html">About</a>
+    <script>
+        updateLines();
+        shiftFocus(0)
+    </script>
+</body>
