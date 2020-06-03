@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.linkedin{
+    padding-top: 2px;
+}
+
+.text {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 96px;
+}
+
+.email {
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.about {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.container {
+    margin: 200px auto;
+    width: 400px;
+}
+
+.buttons {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
