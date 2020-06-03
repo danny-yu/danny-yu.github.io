@@ -30,12 +30,67 @@
 
 .container {
     margin: 200px auto;
+}
+
+.top-container {
+    margin: 0 auto;
+    margin-bottom: 50px;
     width: 400px;
 }
 
+.about-text{
+    margin: 0 auto;
+    width: 500px;
+    font-weight: 400;
+    font-size: 18px;
+}
 .buttons {
     margin-top: 10px;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-around;
 }
+
+.about:hover{
+    color: grey;
+}
+
+.about-animation {
+    animation-name: disappear;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.none {
+    display: none;
+}
+
+.about-text {
+    display: none;
+}
+
+.appear-animation {
+    display: block;
+    animation-name: appear;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
