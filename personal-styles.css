@@ -179,3 +179,7 @@
     animation-delay: 2.5s;
 }
 
+.button-link:hover {
+    fill: grey;
+}
+
