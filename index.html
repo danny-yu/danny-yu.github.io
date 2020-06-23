@@ -11,7 +11,7 @@
         function showAbout() {
             document.getElementById("about").classList.add("about-animation");
             setTimeout(() => {  document.getElementById("about").classList.add("none"); }, 500);
-            setTimeout(() => {  document.getElementById("about-text").classList.add("appear-animation"); }, 501);
+            setTimeout(() => {  document.getElementById("about-container").classList.add("appear-animation"); }, 501);
         }
 
     </script>
@@ -79,7 +79,16 @@
                     <div class="text about" id="about" onclick="showAbout()">About Me</div>
                 </div>
             </div>
-            <div class="about-text text" id="about-text">Hi! I study Computer Science at UC Berkeley.</div>
+            <div class="about-container" id="about-container">
+                <div class="mb about-text text">Hello World!</div>
+                <div class="h-container">
+                    <div class="h-text-block">
+                        <div class="about-text text mb">Hi, I'm Danny. I was born in Taiwan, but I moved to Shanghai, China at a young age and spent most of my life there. Currently I'm in the US in order to study Computer Science at UC Berkeley.  </div>
+                        <div class="about-text text">I like almost all things chocolate. I like playing and talking about video games. Although I've almost never left the cozy confines of a city, I enjoy watching nature documentaries. One day I wish to see an Emperor Penguin in person. </div>
+                    </div>
+                    <img style="max-width: 400px; height: auto;"src="me_hype.jpg">
+                </div>
+            </div>
         </div>
     </body>
 </html>

@@ -36,14 +36,10 @@
     margin: 0 auto;
     margin-bottom: 50px;
     width: 400px;
+    border: 1px solid rgba(0, 0, 0, 0); /* cursed, dont touch */
+
 }
 
-.about-text{
-    margin: 0 auto;
-    width: 500px;
-    font-weight: 400;
-    font-size: 18px;
-}
 .buttons {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -65,12 +61,7 @@
     display: none;
 }
 
-.about-text {
-    display: none;
-}
-
 .appear-animation {
-    display: block;
     animation-name: appear;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
@@ -104,63 +95,63 @@
 .d1 {
     stroke-dasharray: 215.527px;
     stroke-dashoffset: 215.527px;
-    animation: dash 0.15s linear forwards;
+    animation: dash 0.125s linear forwards;
 }
 
 .d2 {
     stroke-dasharray: 427.726px;
     stroke-dashoffset: 427.726px;
-    animation: dash 0.3s linear forwards;
-    animation-delay: 0.15s;
+    animation: dash 0.25s linear forwards;
+    animation-delay: 0.125s;
 }
 
 .a1 {
     stroke-dasharray: 220.249px;
     stroke-dashoffset: 220.249px;
-    animation: dash 0.3s linear forwards;
-    animation-delay: 0.45s;
+    animation: dash 0.25s linear forwards;
+    animation-delay: 0.375s;
 }
 
 .n1 {
     stroke-dasharray: 240.077px;
     stroke-dashoffset: 240.077px;
-    animation: dash 0.3s linear forwards;
-    animation-delay: 0.75s;
+    animation: dash 0.25s linear forwards;
+    animation-delay: 0.625s;
 }
 
 .n2 {
     stroke-dasharray: 242.017px;
     stroke-dashoffset: 242.017px;
-    animation: dash 0.3s linear forwards;
-    animation-delay: 1.15s;
+    animation: dash 0.25s linear forwards;
+    animation-delay: 0.875s;
 }
 
 .y_1 {
     stroke-dasharray: 465.897px;
     stroke-dashoffset: 465.897px;
-    animation: dash 0.3s linear forwards;
-    animation-delay: 1.45s;
+    animation: dash 0.25s linear forwards;
+    animation-delay: 1.125s;
 }
 
 .Y1 {
     stroke-dasharray: 216.449px;
     stroke-dashoffset: 216.449px;
-    animation: dash 0.3s linear forwards;
-    animation-delay: 1.75s;
+    animation: dash 0.25s linear forwards;
+    animation-delay: 1.375s;
 }
 
 .Y2 {
     stroke-dasharray: 113.301px;
     stroke-dashoffset: 113.301px;
-    animation: dash 0.15s linear forwards;
-    animation-delay: 2.05s;
+    animation: dash 0.125s linear forwards;
+    animation-delay: 1.625s;
 }
 
 .u1 {
     stroke-dasharray: 192.68px;
     stroke-dashoffset: 192.68px;
-    animation: dash 0.3s linear forwards;
-    animation-delay: 2.20s;
+    animation: dash 0.25s linear forwards;
+    animation-delay: 1.75s;
 }
 
 @keyframes dash {
@@ -176,10 +167,45 @@
 .main {
     opacity: 0;
     animation: appear 0.5s linear forwards;
-    animation-delay: 2.5s;
+    animation-delay: 2s;
 }
 
 .button-link:hover {
     fill: grey;
+}
+
+.about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0;
+    margin: 0 auto;
+    width: 900px;
+}
+
+.about-text{
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+}
+
+.h-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mb {
+    margin-bottom: 30px;
+}
+
+.h-text-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
 }
 
