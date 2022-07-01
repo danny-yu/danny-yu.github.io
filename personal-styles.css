@@ -29,15 +29,25 @@
 }
 
 .container {
-    margin: 200px auto;
+    
 }
 
 .top-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: 100%;
+    max-height: 100%;
+    width: 50vw;
     margin: 0 auto;
-    margin-bottom: 50px;
-    width: 400px;
     border: 1px solid rgba(0, 0, 0, 0); /* cursed, dont touch */
+}
 
+.top-container-container {
+    border: 1px solid rgba(0, 0, 0, 0); /* cursed, dont touch */
+    height: auto;
+    width: 60%;
 }
 
 .buttons {
@@ -45,10 +55,6 @@
     margin-bottom: 20px;
     display: flex;
     justify-content: space-around;
-}
-
-.about:hover{
-    color: grey;
 }
 
 .about-animation {
@@ -161,7 +167,7 @@
 }
 
 .sig {
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 .main {
@@ -179,7 +185,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    opacity: 0;
     margin: 0 auto;
     width: 900px;
 }
@@ -208,4 +213,3 @@
     align-items: center;
     padding: 30px;
 }
-
